@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="encabesado">Encriptador y Desencriptador de Texto</h1>
+    </header>
+    <main>
+        <div class="contenedor">
+            <section id="textoEntradaSection">
+                <textarea id="textoEntrada" placeholder="Escribe tu texto aquí..." aria-label="Campo de entrada de texto"></textarea>
+                <div id="textoOrientacion">Solo letras minúsculas y sin acentos</div>
+                <div id="botones">
+                    <button onclick="encriptarTexto()">Encriptar</button>
+                    <button onclick="desencriptarTexto()">Desencriptar</button>
+                </div>
+            </section>
+            <section id="textoResultadoSection">
+                <div class="resultado-container">
+                    <img src="img.png" alt="Imagen" class="imagen" id="imagen">
+                    <p id="textoDebajoImagen">
+                        <span>Ningún mensaje</span>
+                        <span>fue</span>
+                        <span>encontrado</span>
+                    </p>
+                    <textarea id="textoResultado" readonly placeholder="Aquí aparecerá el resultado..."></textarea>
+                </div>
+                <button class="botonCopiar" id="botonCopiar" onclick="copiarTexto()">Copiar</button>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Desarrollado por krishna chamorro | © 2024</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
